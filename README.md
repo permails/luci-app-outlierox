@@ -71,16 +71,9 @@ luci-app-outlierox/
 │                   └── overview.js         # Main SPA view (Dashboard, Settings, Routing, Logs)
 ├── root/                                   # System integration files
 │   ├── etc/
-│   │   ├── config/
-│   │   │   └── tailscale                   # Default UCI configuration template
-│   │   ├── hotplug.d/
-│   │   │   └── iface/
-│   │   │       └── 40-tailscale            # Interface hotplug trigger script
-│   │   └── init.d/
-│   │       └── tailscale                   # Service init & procd daemon control script
+│   │   └── uci-defaults/
+│   │       └── 40_luci-outlierox           # Post-install cache & ucitrack setup
 │   └── usr/
-│       ├── sbin/
-│       │   └── tailscale_helper            # Daemon supervisor helper utility
 │       └── share/
 │           ├── luci/
 │           │   └── menu.d/
