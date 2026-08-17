@@ -1,0 +1,28 @@
+{
+	"luci-app-outlierox": {
+		"description": "Grant access to Outlierox Mesh configuration and daemon control",
+		"read": {
+			"file": {
+				"/sbin/ip -s -j ad": [ "exec" ],
+				"/sbin/logread -e tailscale": [ "exec" ],
+				"/usr/sbin/tailscale status --json": [ "exec" ],
+				"/usr/sbin/tailscale login": [ "exec" ],
+				"/usr/sbin/tailscale logout": [ "exec" ],
+				"/usr/sbin/tailscaled --cleanup": [ "exec" ]
+			},
+			"ubus": {
+				"service": [ "list" ],
+				"tailscale": [ "*" ],
+				"outlierox": [ "*" ]
+			},
+			"uci": [ "tailscale", "network", "firewall" ]
+		},
+		"write": {
+			"ubus": {
+				"tailscale": [ "*" ],
+				"outlierox": [ "*" ]
+			},
+			"uci": [ "tailscale", "network", "firewall" ]
+		}
+	}
+}

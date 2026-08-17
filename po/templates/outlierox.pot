@@ -1,0 +1,407 @@
+#
+# Copyright (C) 2026 permails <logo@permails.com>
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Outlierox"
+msgstr ""
+
+msgid "Outlierox Control Center"
+msgstr ""
+
+msgid "Establish a secure, encrypted zero-config Mesh virtual network on your router."
+msgstr ""
+
+msgid "Connecting to Tailscale..."
+msgstr ""
+
+msgid "Requesting authorization link from Tailscale/Headscale..."
+msgstr ""
+
+msgid "Authorization login page opened in a new tab."
+msgstr ""
+
+msgid "Successfully logged in."
+msgstr ""
+
+msgid "Login error: "
+msgstr ""
+
+msgid "Authorize Login"
+msgstr ""
+
+msgid "Are you sure you want to clean runtime cache and restart service?"
+msgstr ""
+
+msgid "Resetting..."
+msgstr ""
+
+msgid "Please wait..."
+msgstr ""
+
+msgid "Service cache cleared and restarted successfully."
+msgstr ""
+
+msgid "Cleanup & Reset"
+msgstr ""
+
+msgid "Save & Apply"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Running"
+msgstr ""
+
+msgid "Needs Login"
+msgstr ""
+
+msgid "Stopped"
+msgstr ""
+
+msgid "Current Device"
+msgstr ""
+
+msgid "Network: "
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Copied IP: "
+msgstr ""
+
+msgid "Firewall Mode"
+msgstr ""
+
+msgid "Interface: tailscale0 (MTU 1280)"
+msgstr ""
+
+msgid "MESH Topology"
+msgstr ""
+
+msgid "Online Nodes"
+msgstr ""
+
+msgid "Direct: "
+msgstr ""
+
+msgid "Relay: "
+msgstr ""
+
+msgid "Mesh Nodes"
+msgstr ""
+
+msgid "General Settings"
+msgstr ""
+
+msgid "Routing & Subnets"
+msgstr ""
+
+msgid "Firewall & Security"
+msgstr ""
+
+msgid "Advanced Flags"
+msgstr ""
+
+msgid "Logs"
+msgstr ""
+
+msgid "Tailnet Mesh Peers"
+msgstr ""
+
+msgid "Real-time status, IP, and relay link topology for all connected mesh nodes."
+msgstr ""
+
+msgid "Refresh"
+msgstr ""
+
+msgid "Logout & Unbind"
+msgstr ""
+
+msgid "Are you sure you want to logout and unbind this node?"
+msgstr ""
+
+msgid "Logging out..."
+msgstr ""
+
+msgid "Status / Device"
+msgstr ""
+
+msgid "Tailscale IP"
+msgstr ""
+
+msgid "OS"
+msgstr ""
+
+msgid "Features / Subnets"
+msgstr ""
+
+msgid "Link Mode"
+msgstr ""
+
+msgid "Action"
+msgstr ""
+
+msgid "Self"
+msgstr ""
+
+msgid "Local Interface (tailscale0)"
+msgstr ""
+
+msgid "Exit Node"
+msgstr ""
+
+msgid "Direct"
+msgstr ""
+
+msgid "Relay"
+msgstr ""
+
+msgid "Core Service Management"
+msgstr ""
+
+msgid "Core parameters mapped to UCI /etc/config/tailscale"
+msgstr ""
+
+msgid "Enable Outlierox Service"
+msgstr ""
+
+msgid "Start tailscaled daemon automatically on system boot"
+msgstr ""
+
+msgid "Listen Port"
+msgstr ""
+
+msgid "Tailscale WireGuard UDP listen port (default: 41641)"
+msgstr ""
+
+msgid "State Directory"
+msgstr ""
+
+msgid "Directory for persistent node state and keys"
+msgstr ""
+
+msgid "Firewall Backend Mode"
+msgstr ""
+
+msgid "nftables (OpenWrt recommended)"
+msgstr ""
+
+msgid "iptables (Legacy)"
+msgstr ""
+
+msgid "Standard Output Log"
+msgstr ""
+
+msgid "Log runtime and connection events to syslog"
+msgstr ""
+
+msgid "Error Log"
+msgstr ""
+
+msgid "Log runtime errors and stack traces"
+msgstr ""
+
+msgid "Private Node & Headscale Integration"
+msgstr ""
+
+msgid "Connect to self-hosted Headscale control server"
+msgstr ""
+
+msgid "Login Server URL"
+msgstr ""
+
+msgid "Leave empty to use official Tailscale SaaS coordination server"
+msgstr ""
+
+msgid "Pre-Auth Key"
+msgstr ""
+
+msgid "Auth key for headless non-interactive node joining"
+msgstr ""
+
+msgid "Custom Hostname"
+msgstr ""
+
+msgid "Friendly name in the Tailnet mesh"
+msgstr ""
+
+msgid "One-click Interface & Firewall Fix"
+msgstr ""
+
+msgid "Interface and firewall rules synchronized."
+msgstr ""
+
+msgid "Fix & Sync"
+msgstr ""
+
+msgid "Advertise LAN Subnets"
+msgstr ""
+
+msgid "Publish local subnets for access by other mesh nodes"
+msgstr ""
+
+msgid "Auto-detected Subnets (Click to toggle)"
+msgstr ""
+
+msgid "Advertised Subnets"
+msgstr ""
+
+msgid "Comma-separated subnet list, e.g. 192.168.1.0/24,10.0.0.0/24"
+msgstr ""
+
+msgid "Advertise as Exit Node"
+msgstr ""
+
+msgid "Allow other mesh nodes to route internet traffic through this router"
+msgstr ""
+
+msgid "Subnet Acceptance & Exit Nodes"
+msgstr ""
+
+msgid "Access remote subnets or use remote mesh exit nodes"
+msgstr ""
+
+msgid "Accept Remote Subnet Routes"
+msgstr ""
+
+msgid "Automatically inject published remote subnets into local routing table"
+msgstr ""
+
+msgid "Site-to-Site Transparent SNAT"
+msgstr ""
+
+msgid "Disable subnet SNAT to preserve original IP addresses"
+msgstr ""
+
+msgid "Use Remote Exit Node"
+msgstr ""
+
+msgid "Do not use exit node (Direct)"
+msgstr ""
+
+msgid "Allow LAN Access from Exit Node"
+msgstr ""
+
+msgid "Allow direct access to local LAN when using an exit node"
+msgstr ""
+
+msgid "Firewall4 Zone Policies"
+msgstr ""
+
+msgid "Manage OpenWrt Firewall4 zone rules safely and non-destructively"
+msgstr ""
+
+msgid "Firewall rules verified and active."
+msgstr ""
+
+msgid "Repair Rules"
+msgstr ""
+
+msgid "Tailscale to LAN Access"
+msgstr ""
+
+msgid "Allow remote Tailscale clients to access router LAN"
+msgstr ""
+
+msgid "LAN to Tailscale Access"
+msgstr ""
+
+msgid "Allow LAN clients to connect to remote Tailscale devices"
+msgstr ""
+
+msgid "Tailscale to WAN Access"
+msgstr ""
+
+msgid "Allow exit node traffic forwarding to public WAN"
+msgstr ""
+
+msgid "DNS & Security Features"
+msgstr ""
+
+msgid "Configure MagicDNS resolution and inbound connection shields"
+msgstr ""
+
+msgid "Enable MagicDNS"
+msgstr ""
+
+msgid "Route *.ts.net queries to 100.100.100.100"
+msgstr ""
+
+msgid "Enable Shields Up"
+msgstr ""
+
+msgid "Block all inbound connections from other mesh peers"
+msgstr ""
+
+msgid "Enable Outlierox SSH"
+msgstr ""
+
+msgid "Secure Tailscale-authenticated SSH access"
+msgstr ""
+
+msgid "Enable Built-in Web Client"
+msgstr ""
+
+msgid "Start local Web client for web-based node control"
+msgstr ""
+
+msgid "Advanced Flags & Parameters"
+msgstr ""
+
+msgid "Extra arguments passed to tailscale up/set on daemon startup"
+msgstr ""
+
+msgid "Custom Startup Flags"
+msgstr ""
+
+msgid "Supports all official Tailscale CLI flags"
+msgstr ""
+
+msgid "Virtual Interface MTU"
+msgstr ""
+
+msgid "Virtual tunnel MTU (Default: 1280)"
+msgstr ""
+
+msgid "Memory Optimization Mode"
+msgstr ""
+
+msgid "Disabled (Standard Performance)"
+msgstr ""
+
+msgid "Enabled (Reduced GC Frequency)"
+msgstr ""
+
+msgid "Real-time Logs"
+msgstr ""
+
+msgid "Live syslog events captured from logread"
+msgstr ""
+
+msgid "Logs copied to clipboard."
+msgstr ""
+
+msgid "No logs recorded."
+msgstr ""
+
+msgid "Applying Outlierox Configuration..."
+msgstr ""
+
+msgid "Saving and syncing configuration to tailscaled daemon..."
+msgstr ""
+
+msgid "Outlierox configuration saved and applied successfully!"
+msgstr ""
+
+msgid "Error: "
+msgstr ""
+
+msgid "Failed to save"
+msgstr ""
+
+msgid "Save error: "
+msgstr ""

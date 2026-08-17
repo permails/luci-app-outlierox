@@ -1,0 +1,416 @@
+#
+# Copyright (C) 2026 permails <logo@permails.com>
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: luci-app-outlierox\n"
+"Last-Translator: permails <logo@permails.com>\n"
+"Language: zh_Hant\n"
+
+msgid "Outlierox"
+msgstr "異地組網"
+
+msgid "Mesh Network"
+msgstr "異地組網"
+
+msgid "Zero-config Mesh virtual private network based on Tailscale / Headscale engine."
+msgstr "基於 Tailscale / Headscale 引擎，在您的路由器上建立安全、加密的零配置 Mesh 異地虛擬區域網。"
+
+msgid "Connecting to Tailscale..."
+msgstr "正在連線至 Tailscale..."
+
+msgid "Requesting authorization link from Tailscale/Headscale..."
+msgstr "正在向 Tailscale / Headscale 請求授權登入連結..."
+
+msgid "Authorization login page opened in a new tab."
+msgstr "已在新分頁中開啟授權登入頁面。"
+
+msgid "Successfully logged in."
+msgstr "已成功登入。"
+
+msgid "Login error: "
+msgstr "登入出錯: "
+
+msgid "Authorize Login"
+msgstr "授權登入"
+
+msgid "Are you sure you want to clean runtime cache and restart service?"
+msgstr "確定要清理運行快取並重啟服務嗎？"
+
+msgid "Resetting..."
+msgstr "正在重置..."
+
+msgid "Please wait..."
+msgstr "請稍候..."
+
+msgid "Service cache cleared and restarted successfully."
+msgstr "服務快取已清理並成功重啟。"
+
+msgid "Cleanup & Reset"
+msgstr "清理重置"
+
+msgid "Save & Apply"
+msgstr "儲存並套用"
+
+msgid "Reset"
+msgstr "重設"
+
+msgid "Running"
+msgstr "正常運行"
+
+msgid "Needs Login"
+msgstr "等待登入"
+
+msgid "Stopped"
+msgstr "已停止"
+
+msgid "Current Device"
+msgstr "目前裝置"
+
+msgid "Network:"
+msgstr "網路:"
+
+msgid "Tailnet Mesh"
+msgstr "Tailnet 虛擬網"
+
+msgid "Tailscale IP"
+msgstr "Tailscale IP"
+
+msgid "No IP assigned"
+msgstr "未分配 IP"
+
+msgid "IPv6:"
+msgstr "IPv6:"
+
+msgid "None"
+msgstr "無"
+
+msgid "Copy"
+msgstr "複製"
+
+msgid "Copied IP: "
+msgstr "已複製 IP: "
+
+msgid "Firewall Mode"
+msgstr "防火牆模式"
+
+msgid "Interface: tailscale0 (MTU 1280)"
+msgstr "介面: tailscale0 (MTU 1280)"
+
+msgid "MESH Topology"
+msgstr "MESH 拓撲"
+
+msgid "Online Nodes"
+msgstr "在線節點"
+
+msgid "Direct"
+msgstr "直連"
+
+msgid "Relay"
+msgstr "中繼"
+
+msgid "Mesh Nodes"
+msgstr "節點裝置"
+
+msgid "General Settings"
+msgstr "常規設定"
+
+msgid "Routing & Subnets"
+msgstr "路由與子網"
+
+msgid "Firewall & Security"
+msgstr "防火牆與安全"
+
+msgid "Advanced Flags"
+msgstr "進階參數"
+
+msgid "Logs"
+msgstr "運行日誌"
+
+msgid "Mesh Peers"
+msgstr "互聯節點列表 (Peers)"
+
+msgid "Real-time status, IP, and relay link topology for all connected mesh nodes."
+msgstr "目前虛擬區域網路內所有已接入的裝置狀態、IP 及中繼鏈路資訊。"
+
+msgid "Refresh"
+msgstr "重新整理"
+
+msgid "Logout & Unbind"
+msgstr "登出解除綁定"
+
+msgid "Are you sure you want to logout and unbind this node?"
+msgstr "確定要登出並解除綁定目前裝置嗎？"
+
+msgid "Logging out..."
+msgstr "正在登出..."
+
+msgid "Status / Device"
+msgstr "狀態 / 裝置名稱"
+
+msgid "OS"
+msgstr "作業系統"
+
+msgid "Features / Subnets"
+msgstr "特性 / 宣告子網"
+
+msgid "Link Mode"
+msgstr "鏈路模式"
+
+msgid "Action"
+msgstr "操作"
+
+msgid "Self"
+msgstr "本機"
+
+msgid "Local Interface (tailscale0)"
+msgstr "本地介面 (tailscale0)"
+
+msgid "Exit Node"
+msgstr "出口節點"
+
+msgid "Core Service Management"
+msgstr "基礎服務管理"
+
+msgid "Core parameters mapped to UCI /etc/config/tailscale"
+msgstr "對應 UCI /etc/config/tailscale 的核心運行參數"
+
+msgid "Enable Outlierox Service"
+msgstr "啟用 Outlierox 服務"
+
+msgid "Start tailscaled daemon automatically on system boot"
+msgstr "隨系統開機自動啟動後台 tailscaled 守護程序"
+
+msgid "Listen Port"
+msgstr "監聽連接埠"
+
+msgid "Tailscale WireGuard UDP listen port (default: 41641)"
+msgstr "Tailscale WireGuard 隧道 UDP 監聽連接埠（預設 41641）"
+
+msgid "State Directory"
+msgstr "狀態儲存目錄"
+
+msgid "Directory for persistent node state and keys"
+msgstr "持久化儲存節點私鑰與運行配置的目錄"
+
+msgid "Firewall Backend Mode"
+msgstr "防火牆驅動模式"
+
+msgid "nftables (OpenWrt recommended)"
+msgstr "nftables (OpenWrt 官方推薦)"
+
+msgid "iptables (Legacy)"
+msgstr "iptables (傳統相容模式)"
+
+msgid "Standard Output Log"
+msgstr "標準輸出日誌"
+
+msgid "Log runtime and connection events to syslog"
+msgstr "記錄服務常規運行與連線事件至 syslog"
+
+msgid "Error Log"
+msgstr "錯誤異常日誌"
+
+msgid "Log runtime errors and stack traces"
+msgstr "記錄服務報錯與異常堆疊"
+
+msgid "Private Node & Headscale Integration"
+msgstr "私有節點與 Headscale 對接"
+
+msgid "Connect to self-hosted Headscale control server"
+msgstr "支援對接自建 Headscale 伺服端實現私有化控制"
+
+msgid "Login Server URL"
+msgstr "自訂伺服器"
+
+msgid "Leave empty to use official Tailscale SaaS coordination server"
+msgstr "留空則預設連線 Tailscale 官方 SaaS 基礎設施控制台"
+
+msgid "Pre-Auth Key"
+msgstr "預先授權金鑰"
+
+msgid "Auth key for headless non-interactive node joining"
+msgstr "用於開機或網路重置時無人值守免掃碼自動加入網路"
+
+msgid "Custom Hostname"
+msgstr "自訂裝置名稱"
+
+msgid "Friendly name in the Tailnet mesh"
+msgstr "在 Tailnet 中顯示的易記名稱"
+
+msgid "One-click Interface & Firewall Fix"
+msgstr "快捷工具：一鍵修復虛擬介面與規則"
+
+msgid "Interface and firewall rules synchronized."
+msgstr "介面與防火牆已自動同步。"
+
+msgid "Fix & Sync"
+msgstr "一鍵修復"
+
+msgid "Advertise LAN Subnets"
+msgstr "區域網路子網發布"
+
+msgid "Publish local subnets for access by other mesh nodes"
+msgstr "將 OpenWrt 下屬的區域網路網段發布給異地裝置訪問"
+
+msgid "Auto-detected Subnets (Click to toggle)"
+msgstr "自動探測子網 (點擊選填)"
+
+msgid "Advertised Subnets"
+msgstr "發布子網列表"
+
+msgid "Comma-separated subnet list, e.g. 192.168.1.0/24,10.0.0.0/24"
+msgstr "多個子網用逗號隔開，例如: 192.168.1.0/24,10.0.0.0/24"
+
+msgid "Advertise as Exit Node"
+msgstr "發布為出口節點"
+
+msgid "Allow other mesh nodes to route internet traffic through this router"
+msgstr "允許其他裝置將本路由器作為其上網全局出口"
+
+msgid "Subnet Acceptance & Exit Nodes"
+msgstr "路由接收與出口"
+
+msgid "Access remote subnets or use remote mesh exit nodes"
+msgstr "訪問其他節點發布的內網網段或經由異地節點上網"
+
+msgid "Accept Remote Subnet Routes"
+msgstr "接收異地子網路由"
+
+msgid "Automatically inject published remote subnets into local routing table"
+msgstr "自動將其他節點廣播的網段寫入本機路由表"
+
+msgid "Site-to-Site Transparent SNAT"
+msgstr "透明雙向互聯 (Site-to-Site SNAT=false)"
+
+msgid "Disable subnet SNAT to preserve original IP addresses"
+msgstr "關閉子網 NAT 偽裝，保留兩端真實三層 IP"
+
+msgid "Use Remote Exit Node"
+msgstr "使用全局出口節點"
+
+msgid "Do not use exit node (Direct)"
+msgstr "不使用出口節點 (預設直連)"
+
+msgid "Allow LAN Access from Exit Node"
+msgstr "允許區域網路旁路"
+
+msgid "Allow direct access to local LAN when using an exit node"
+msgstr "使用出口節點時，仍允許直接訪問本路由器區域網"
+
+msgid "Firewall4 Zone Policies"
+msgstr "Firewall4 區域策略"
+
+msgid "Manage OpenWrt Firewall4 zone rules safely and non-destructively"
+msgstr "自動管理 OpenWrt 防火牆區域，安全無破壞性"
+
+msgid "Firewall rules verified and active."
+msgstr "防火牆規則已驗證生效。"
+
+msgid "Repair Rules"
+msgstr "修復規則"
+
+msgid "Tailscale to LAN Access"
+msgstr "Tailscale 訪問本地 LAN (ts ➔ lan)"
+
+msgid "Allow remote Tailscale clients to access router LAN"
+msgstr "允許 Tailscale 異地客戶端訪問本路由器區域網路裝置"
+
+msgid "LAN to Tailscale Access"
+msgstr "本地 LAN 訪問 Tailscale (lan ➔ ts)"
+
+msgid "Allow LAN clients to connect to remote Tailscale devices"
+msgstr "允許區域網路裝置直接連入異地 Tailscale 裝置"
+
+msgid "Tailscale to WAN Access"
+msgstr "Tailscale 借道訪問 WAN (ts ➔ wan)"
+
+msgid "Allow exit node traffic forwarding to public WAN"
+msgstr "允許出口節點流量轉發至外網網際網路"
+
+msgid "DNS & Security Features"
+msgstr "DNS 與安全特性"
+
+msgid "Configure MagicDNS resolution and inbound connection shields"
+msgstr "配置 MagicDNS 域名解析及入站安全防護"
+
+msgid "Enable MagicDNS"
+msgstr "接入 MagicDNS"
+
+msgid "Route *.ts.net queries to 100.100.100.100"
+msgstr "自動將 *.ts.net 域名解析請求轉發至 100.100.100.100"
+
+msgid "Enable Shields Up"
+msgstr "開啟防護盾"
+
+msgid "Block all inbound connections from other mesh peers"
+msgstr "阻斷所有來自 Tailnet 其他節點對本機的入站連線"
+
+msgid "Enable Outlierox SSH"
+msgstr "啟用 Outlierox SSH"
+
+msgid "Secure Tailscale-authenticated SSH access"
+msgstr "允許基於 Tailscale 身份驗證體系的原生免密安全 SSH 訪問"
+
+msgid "Enable Built-in Web Client"
+msgstr "啟用內建 Web 客戶端"
+
+msgid "Start local Web client for web-based node control"
+msgstr "在本地連接埠開啟 Tailscale 網頁管理端"
+
+msgid "Advanced Flags & Parameters"
+msgstr "進階參數與自訂 Flags"
+
+msgid "Extra arguments passed to tailscale up/set on daemon startup"
+msgstr "在服務啟動時透傳給 tailscale set/up 的額外參數"
+
+msgid "Custom Startup Flags"
+msgstr "附加命令列參數"
+
+msgid "Supports all official Tailscale CLI flags"
+msgstr "支援所有官方 Tailscale 命令列啟動參數"
+
+msgid "Virtual Interface MTU"
+msgstr "網卡 MTU 大小"
+
+msgid "Virtual tunnel MTU (Default: 1280)"
+msgstr "Tailscale 虛擬網卡 MTU（預設: 1280）"
+
+msgid "Memory Optimization Mode"
+msgstr "記憶體最佳化模式"
+
+msgid "Disabled (Standard Performance)"
+msgstr "關閉 (標準效能模式)"
+
+msgid "Enabled (Reduced GC Frequency)"
+msgstr "開啟 (限制 GC 頻率降低記憶體佔用)"
+
+msgid "Real-time Logs"
+msgstr "即時運行日誌 (Logs)"
+
+msgid "Live syslog events captured from logread"
+msgstr "直連 OpenWrt 系統 logread 採集 Tailscale 後台服務事件"
+
+msgid "Logs copied to clipboard."
+msgstr "日誌已複製到剪貼簿。"
+
+msgid "No logs recorded."
+msgstr "暫無日誌記錄。"
+
+msgid "Applying Outlierox Configuration..."
+msgstr "正在套用 Outlierox 設定..."
+
+msgid "Saving and syncing configuration to tailscaled daemon..."
+msgstr "正在儲存並同步至 tailscaled 守護程序..."
+
+msgid "Outlierox configuration saved and applied successfully!"
+msgstr "Outlierox 設定已成功儲存並下發生效！"
+
+msgid "Error: "
+msgstr "錯誤: "
+
+msgid "Failed to save"
+msgstr "儲存失敗"
+
+msgid "Save error: "
+msgstr "儲存出錯: "

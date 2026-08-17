@@ -1,0 +1,371 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Tailscale"
+msgstr "Tailscale 虚拟组网"
+
+msgid "RUNNING"
+msgstr "运行中"
+
+msgid "NEEDS LOGIN"
+msgstr "等待登录"
+
+msgid "STOPPED"
+msgstr "已停止"
+
+msgid "Zero-Config Mesh VPN"
+msgstr "零配置 Mesh 异地互联"
+
+msgid "MagicDNS: "
+msgstr "MagicDNS 域名: "
+
+msgid "Connecting to Tailscale..."
+msgstr "正在连接 Tailscale..."
+
+msgid "Requesting Login URL..."
+msgstr "正在向 Tailscale 请求授权登录链接..."
+
+msgid "Login / Auth"
+msgstr "绑定 / 授权登录"
+
+msgid "Cleanup Reset"
+msgstr "一键清理重置"
+
+msgid "Logout"
+msgstr "登出并解绑"
+
+msgid "Are you sure you want to clean Tailscale caches and restart?"
+msgstr "确定要清理 Tailscale 运行缓存并重启服务吗？"
+
+msgid "Are you sure you want to log out and unbind this device?"
+msgstr "确定要退出登录并解绑当前路由器设备吗？"
+
+msgid "Resetting..."
+msgstr "正在重置..."
+
+msgid "Please wait."
+msgstr "请稍候..."
+
+msgid "Tailscale reset & restarted."
+msgstr "Tailscale 缓存已清理并成功重启服务。"
+
+msgid "Logging out..."
+msgstr "正在退出登录..."
+
+msgid "Logged out successfully."
+msgstr "已成功退出登录并解绑设备。"
+
+msgid "Auth URL opened in new tab."
+msgstr "已在新标签页中打开授权登录页面。"
+
+msgid "Logged in successfully."
+msgstr "已成功登录。"
+
+msgid "Login error: %s"
+msgstr "登录出错: %s"
+
+msgid "Copied IP: "
+msgstr "已复制 IP: "
+
+msgid "Copy"
+msgstr "复制"
+
+msgid "No IP"
+msgstr "未分配 IP"
+
+msgid "Firewall Mode"
+msgstr "防火墙驱动模式"
+
+msgid "Interface: tailscale0"
+msgstr "虚拟接口: tailscale0"
+
+msgid "Tailnet Peers"
+msgstr "Tailnet 互联节点"
+
+msgid "Online Nodes"
+msgstr "个在线节点"
+
+msgid "Mesh Virtual LAN"
+msgstr "Mesh 点对点虚拟局域网"
+
+msgid "Auto Configure Firewall (Firewall4)"
+msgstr "自动配置防火墙规则 (Firewall4)"
+
+msgid "Firewall configuration verified."
+msgstr "Firewall4 (nftables) 动态区域与双向转发规则已验证生效。"
+
+msgid "Topology & Peers"
+msgstr "节点拓扑与设备"
+
+msgid "Basic Settings"
+msgstr "基础服务设置"
+
+msgid "Routing & Subnets"
+msgstr "子网路由与出口节点"
+
+msgid "Firewall & Security"
+msgstr "防火墙与安全访问"
+
+msgid "Extra Flags"
+msgstr "进阶与额外参数"
+
+msgid "Real-time Logs"
+msgstr "实时诊断日志"
+
+msgid "Tailnet 网状节点列表 (Peers)"
+msgstr "Tailnet 网状节点列表 (Peers)"
+
+msgid "当前虚拟局域网内所有已接入的设备状态、IP 及中继链路信息。"
+msgstr "当前虚拟局域网内所有已接入的设备状态、IP 及中继链路信息。"
+
+msgid "刷新拓扑"
+msgstr "刷新拓扑"
+
+msgid "Device Name"
+msgstr "设备名称"
+
+msgid "Tailscale IP"
+msgstr "Tailscale IP 地址"
+
+msgid "OS"
+msgstr "系统平台"
+
+msgid "Roles / Subnets"
+msgstr "角色 / 宣告网段"
+
+msgid "Link Mode"
+msgstr "通信链路状态"
+
+msgid "Direct"
+msgstr "P2P 直连"
+
+msgid "DERP Relay"
+msgstr "DERP 中继"
+
+msgid "Exit Node"
+msgstr "出口节点"
+
+msgid "No other peers connected yet. Log in to your Tailnet to view devices."
+msgstr "当前暂无其他在线互联节点。请先登录绑定您的 Tailnet 账号以查看设备。"
+
+msgid "基础服务管理 (Basic Config)"
+msgstr "基础服务管理 (Basic Config)"
+
+msgid "控制 Tailscaled 核心进程生命周期及通信端口"
+msgstr "控制 Tailscaled 核心进程生命周期及通信端口"
+
+msgid "Enable Service"
+msgstr "启用 Tailscale 服务"
+
+msgid "随系统开机自动启动后台 tailscaled 守护进程"
+msgstr "随系统开机自动启动后台 tailscaled 守护进程"
+
+msgid "UDP Port"
+msgstr "WireGuard 监听端口"
+
+msgid "Tailscale WireGuard 隧道 UDP 监听端口"
+msgstr "Tailscale WireGuard 隧道 UDP 监听端口"
+
+msgid "State Storage Path"
+msgstr "状态与私钥存储路径"
+
+msgid "持久化存储节点私钥、state 缓存与运行配置的目录"
+msgstr "持久化存储节点私钥、state 缓存与运行配置的目录"
+
+msgid "Headscale 私有服务端与密钥"
+msgstr "Headscale 私有服务端与密钥"
+
+msgid "支持对接自建 Headscale 服务端实现完全私有化控制"
+msgstr "支持对接自建 Headscale 服务端实现完全私有化控制"
+
+msgid "Headscale / Custom Server URL"
+msgstr "Headscale 自定义服务端地址"
+
+msgid "留空则默认连接 Tailscale 官方 SaaS 基础设施控制台"
+msgstr "留空则默认连接 Tailscale 官方 SaaS 基础设施控制台"
+
+msgid "Pre-Auth Key"
+msgstr "预授权密钥 (Pre-AuthKey)"
+
+msgid "用于无人值守自动快速入网的预授权 AuthKey"
+msgstr "用于无人值守自动快速入网的预授权 AuthKey"
+
+msgid "Override Hostname"
+msgstr "自定义设备名"
+
+msgid "在 Tailnet 中显示的自定义节点名称（留空使用系统主机名）"
+msgstr "在 Tailnet 中显示的自定义节点名称（留空使用系统主机名）"
+
+msgid "局域网子网发布 (Advertise Subnets)"
+msgstr "局域网子网发布 (Advertise Subnets)"
+
+msgid "将 OpenWrt 下属的局域网网段发布给异地设备访问"
+msgstr "将 OpenWrt 下属的局域网网段发布给异地设备访问"
+
+msgid "自动探测到的物理子网 (点击一键添加)"
+msgstr "自动探测到的物理子网 (点击一键添加)"
+
+msgid "发布子网列表 (advertise_routes)"
+msgstr "发布子网列表 (advertise_routes)"
+
+msgid "多个子网用逗号隔开，例如 192.168.1.0/24,10.0.0.0/24"
+msgstr "多个子网用逗号隔开，例如 192.168.1.0/24,10.0.0.0/24"
+
+msgid "Advertise as Exit Node"
+msgstr "作为全局出口节点 (Advertise Exit Node)"
+
+msgid "允许其他异地设备将本路由作为其上网全局出口"
+msgstr "允许其他异地设备将本路由作为其上网全局出口"
+
+msgid "接收路由与使用出口节点"
+msgstr "接收路由与使用出口节点"
+
+msgid "访问其他节点发布的内网网段或经由异地节点上网"
+msgstr "访问其他节点发布的内网网段或经由异地节点上网"
+
+msgid "Accept Remote Subnets"
+msgstr "接收异地子网路由 (Accept Routes)"
+
+msgid "自动将异地节点广播的内网网段写入本地路由表"
+msgstr "自动将异地节点广播的内网网段写入本地路由表"
+
+msgid "Site-to-Site (Disable SNAT)"
+msgstr "透明双向互联 (Site-to-Site)"
+
+msgid "关闭子网 NAT 伪装，保留两端真实三层源 IP"
+msgstr "关闭子网 NAT 伪装，保留两端真实三层源 IP"
+
+msgid "Use Exit Node"
+msgstr "使用全局出口节点 (Exit Node)"
+
+msgid "选择一个在线 Exit Node 代理本路由器的外网流量"
+msgstr "选择一个在线 Exit Node 代理本路由器的外网流量"
+
+msgid "None (Direct Internet)"
+msgstr "🚫 不使用 (默认直连上网)"
+
+msgid "Allow LAN Access with Exit Node"
+msgstr "允许本地局域网旁路 (Allow LAN Access)"
+
+msgid "使用出口节点时，仍允许直接访问本地局域网"
+msgstr "使用出口节点时，仍允许直接访问本地局域网"
+
+msgid "Firewall4 区域与转发策略"
+msgstr "Firewall4 区域与转发策略"
+
+msgid "自动管理 OpenWrt 25 的 Firewall Zone，安全无破坏性"
+msgstr "自动管理 OpenWrt 25 的 Firewall Zone，安全无破坏性"
+
+msgid "Tailscale 访问本地 LAN (ts -> lan)"
+msgstr "Tailscale 访问本地 LAN (ts -> lan)"
+
+msgid "允许 Tailscale 异地客户端访问本路由器局域网设备"
+msgstr "允许 Tailscale 异地客户端访问本路由器局域网设备"
+
+msgid "本地 LAN 访问 Tailscale (lan -> ts)"
+msgstr "本地 LAN 访问 Tailscale (lan -> ts)"
+
+msgid "允许局域网设备直接连入异地 Tailscale 设备"
+msgstr "允许局域网设备直接连入异地 Tailscale 设备"
+
+msgid "Tailscale 借道访问 WAN (ts -> wan)"
+msgstr "Tailscale 借道访问 WAN (ts -> wan)"
+
+msgid "允许出口节点流量转发至外网互联网"
+msgstr "允许出口节点流量转发至外网互联网"
+
+msgid "DNS 与专属安全特性"
+msgstr "DNS 与专属安全特性"
+
+msgid "配置 MagicDNS 内网域名解析及入站安全"
+msgstr "配置 MagicDNS 内网域名解析及入站安全"
+
+msgid "Accept MagicDNS"
+msgstr "接入 MagicDNS (accept_dns)"
+
+msgid "自动将 *.ts.net 域名解析请求转发至 100.100.100.100"
+msgstr "自动将 *.ts.net 域名解析请求转发至 100.100.100.100"
+
+msgid "Shields Up (Block Inbound)"
+msgstr "开启防护盾 (Shields Up)"
+
+msgid "完全阻断所有来自 Tailnet 其他节点对本机的入站连接"
+msgstr "完全阻断所有来自 Tailnet 其他节点对本机的入站连接"
+
+msgid "Tailscale SSH"
+msgstr "启用 Tailscale SSH"
+
+msgid "允许基于 Tailscale 身份验证体系的原生免密安全 SSH 访问"
+msgstr "允许基于 Tailscale 身份验证体系的原生免密安全 SSH 访问"
+
+msgid "Enable Web Client"
+msgstr "启用内置 Web 客户端"
+
+msgid "在本地端口开启 Tailscale 网页管理端"
+msgstr "在本地端口开启 Tailscale 网页管理端"
+
+msgid "进阶参数与自定义命令行 Flags"
+msgstr "进阶参数与自定义命令行 Flags"
+
+msgid "在服务启动时透传给 tailscale set/up 的额外参数"
+msgstr "在服务启动时透传给 tailscale set/up 的额外参数"
+
+msgid "Additional Flags"
+msgstr "附加命令行参数 (Flags)"
+
+msgid "支持所有官方 Tailscale 命令行启动参数"
+msgstr "支持所有官方 Tailscale 命令行启动参数"
+
+msgid "Custom MTU"
+msgstr "自定义网卡 MTU"
+
+msgid "Tailscale 虚拟网卡 MTU 大小（默认: 1280）"
+msgstr "Tailscale 虚拟网卡 MTU 大小（默认: 1280）"
+
+msgid "内存精简优化模式"
+msgstr "内存精简优化模式"
+
+msgid "关闭 (标准性能模式)"
+msgstr "关闭 (标准性能模式)"
+
+msgid "开启 (限制 Go GC 频率与内存占用)"
+msgstr "开启 (限制 Go GC 频率与内存占用)"
+
+msgid "实时诊断与运行日志 (Real-time Logs)"
+msgstr "实时诊断与运行日志 (Real-time Logs)"
+
+msgid "直连 OpenWrt 25 系统 logread 采集 Tailscale 后台服务事件"
+msgstr "直连 OpenWrt 25 系统 logread 采集 Tailscale 后台服务事件"
+
+msgid "刷新日志"
+msgstr "刷新日志"
+
+msgid "Copy Logs"
+msgstr "复制日志"
+
+msgid "Logs copied to clipboard."
+msgstr "日志已复制到剪贴板。"
+
+msgid "No logs recorded yet."
+msgstr "暂无日志记录。"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Save & Apply"
+msgstr "保存并应用"
+
+msgid "Applying Tailscale Settings..."
+msgstr "正在应用 Tailscale 配置..."
+
+msgid "Saving and updating tailscaled..."
+msgstr "正在保存并同步至 tailscaled 守护进程..."
+
+msgid "Tailscale configuration updated successfully."
+msgstr "Tailscale 配置已成功保存并下发生效！"
+
+msgid "Error: %s"
+msgstr "错误: %s"
+
+msgid "Error saving: %s"
+msgstr "保存出错: %s"
