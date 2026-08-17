@@ -1,15 +1,4 @@
 {
-	"admin/services/outlierox": {
-		"title": "Outlierox",
-		"order": 55,
-		"action": {
-			"type": "view",
-			"path": "outlierox/overview"
-		},
-		"depends": {
-			"acl": [ "luci-app-outlierox" ]
-		}
-	},
 	"admin/vpn/outlierox": {
 		"title": "Outlierox",
 		"order": 55,
