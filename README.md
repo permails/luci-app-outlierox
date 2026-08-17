@@ -1,46 +1,106 @@
 # luci-app-outlierox
 
-[![License](https://img.shields.io/badge/License-GPL%202.0-blue.svg)](LICENSE)
-[![OpenWrt Version](https://img.shields.io/badge/OpenWrt-23.x%20%7C%2024.x%20%7C%2025.x-success.svg)](https://openwrt.org/)
-
-**Outlierox** is a modern, high-performance, single-page LuCI management console for zero-config Tailnet Mesh virtual private networks on OpenWrt.
+Next-Generation Zero-Configuration Mesh Virtual Private Network Management Console for OpenWrt (Tailscale / Headscale Engine, LuCI Pure JavaScript SPA Architecture).
 
 ---
 
-## Features
+## ✨ Features
 
-* **Tailnet Mesh Network Topologies**: Real-time monitoring of self-node and all remote mesh peers, direct P2P connections, and DERP relay links.
-* **Subnet & Exit Node Routing**: Effortless local subnet advertising, remote route acceptance, and full egress exit-node proxying with transparent Site-to-Site SNAT control.
-* **Firewall4 & nftables Integration**: Non-destructive, bidirectional zone and forwarding orchestration tailored for OpenWrt 25.
-* **Multi-language Support (i18n)**: Native Gettext translations (English, 简体中文, 繁體中文).
-* **Headscale & Self-Hosted Coordination**: Fully compatible with custom Headscale servers and official Tailscale SaaS control planes.
-
----
-
-## Requirements
-
-* OpenWrt 23.05 / 24.10 / 25.12 or newer
-* Core Packages: `tailscale`, `luci-base`, `rpcd-mod-ucode`
+* **Real-Time Mesh Topology Dashboard**: Live monitoring of self-node status, virtual IP assignments, P2P direct links, and DERP relay paths for all connected nodes across your Tailnet mesh.
+* **Subnet Routing & Egress Exit Nodes**: Effortlessly publish local router subnets, discover connected subnets automatically, accept remote routes, and configure egress exit nodes with transparent Site-to-Site SNAT control.
+* **Native Firewall4 & nftables Integration**: Safe, non-destructive zone and forwarding rule orchestration tailored for OpenWrt 25, including automatic interface binding and MTU/MSS clamping.
+* **Private & Hybrid Cloud Coordination**: Full compatibility with self-hosted Headscale control servers as well as the official Tailscale SaaS coordination plane.
+* **Advanced Tailnet Security**: Integrated toggles for MagicDNS (*.ts.net) routing, Shields Up inbound isolation, native Tailscale SSH, and local web client access.
+* **Modern SPA User Experience**: Fast, responsive single-page interface built with pure JavaScript, crisp vector SVG iconography, OpenWrt native design language, and instant zero-lag tab switching.
+* **Full Multi-Language Support (i18n)**: Native Gettext internationalization supporting English, Simplified Chinese (简体中文), and Traditional Chinese (繁體中文).
 
 ---
 
-## Building from Source
+## 🛠️ How to Build
 
-### In OpenWrt Source Tree
+### 1. Place into Source Tree
+Clone this repository into your OpenWrt buildroot source directory under `package/` or custom feeds:
 
 ```bash
-cd package/
+# Option A: Place directly into package directory
+cd openwrt
+git clone https://github.com/permails/luci-app-outlierox.git package/luci-app-outlierox
+
+# Option B: Place into extra-packages directory
+cd openwrt/extra-packages
 git clone https://github.com/permails/luci-app-outlierox.git
-cd ..
-./scripts/feeds update -a && ./scripts/feeds install -a
-make menuconfig # LuCI -> Applications -> luci-app-outlierox
+```
+
+### 2. Update and Install Feeds
+```bash
+./scripts/feeds update -a
+./scripts/feeds install -a
+make menuconfig
+```
+In `make menuconfig`, select:
+```text
+LuCI --->
+  3. Applications --->
+    <*> luci-app-outlierox......... LuCI support for Outlierox (Zero-Config Mesh Network)
+```
+
+### 3. Compile Package
+```bash
+# Compile single package with verbose output
 make package/luci-app-outlierox/compile V=s
+
+# Compiled packages (.ipk / .apk) are located in:
+# bin/packages/<arch>/base/ or bin/packages/<arch>/luci/
 ```
 
 ---
 
-## License
+## 📂 File Structure
 
-GPL-2.0 License. See [LICENSE](LICENSE) for details.
+```text
+luci-app-outlierox/
+├── Makefile                                # OpenWrt buildroot package manifest
+├── README.md                               # Project documentation
+├── .gitignore                              # Git ignore rules
+├── LICENSE                                 # GNU General Public License v2.0
+├── htdocs/                                 # Web frontend static assets
+│   └── luci-static/
+│       └── resources/
+│           └── view/
+│               └── outlierox/
+│                   └── overview.js         # Main SPA view (Dashboard, Settings, Routing, Logs)
+├── root/                                   # System integration files
+│   ├── etc/
+│   │   ├── config/
+│   │   │   └── tailscale                   # Default UCI configuration template
+│   │   ├── hotplug.d/
+│   │   │   └── iface/
+│   │   │       └── 40-tailscale            # Interface hotplug trigger script
+│   │   └── init.d/
+│   │       └── tailscale                   # Service init & procd daemon control script
+│   └── usr/
+│       ├── sbin/
+│       │   └── tailscale_helper            # Daemon supervisor helper utility
+│       └── share/
+│           ├── luci/
+│           │   └── menu.d/
+│           │       └── luci-app-outlierox.json  # LuCI menu registration (VPN / Services)
+│           └── rpcd/
+│               ├── acl.d/
+│               │   └── luci-app-outlierox.json  # RPCD / UCI security ACL permissions
+│               └── ucode/
+│                   └── tailscale.uc        # Backend ucode RPC service provider
+└── po/                                     # Multi-language internationalization (i18n)
+    ├── templates/
+    │   └── outlierox.pot                   # Master Gettext POT template
+    ├── zh_Hans/
+    │   └── outlierox.po                    # Simplified Chinese translation catalog
+    └── zh_Hant/
+        └── outlierox.po                    # Traditional Chinese translation catalog
+```
 
-**Maintainer**: permails `<logo@permails.com>`
+---
+
+## 📜 License
+
+GPL-2.0 © 2026 [permails](mailto:logo@permails.com)
