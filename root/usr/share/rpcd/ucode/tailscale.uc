@@ -105,6 +105,12 @@ methods.get_status = {
 			result.error = '' + e;
 		}
 
+		let is_fw4 = (exec('test -x /sbin/fw4').code == 0);
+		result.fw_mode = is_fw4 ? 'nftables' : 'iptables';
+		result.fw_name = is_fw4 ? 'Firewall4' : 'Firewall3';
+		result.fw_badge = is_fw4 ? 'NFTABLES' : 'IPTABLES';
+		result.fw_driver = is_fw4 ? 'nftables' : 'iptables';
+
 		return result;
 	}
 };
@@ -378,7 +384,14 @@ methods.setup_firewall = {
 methods.get_logs = {
 	args: { lines: 100 },
 	call: function(request) {
-		let max_lines = request.args.lines || 100;
+		let max_lines = 100;
+		if (request?.args?.lines != null) {
+			if (type(request.args.lines) == 'object' && request.args.lines.lines != null) {
+				max_lines = int(request.args.lines.lines) || 100;
+			} else {
+				max_lines = int(request.args.lines) || 100;
+			}
+		}
 		let log_res = exec('logread -e tailscale -l ' + max_lines);
 		return { logs: log_res.stdout };
 	}
