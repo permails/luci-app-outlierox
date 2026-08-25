@@ -2,55 +2,8 @@
 # Copyright (C) 2026 permails <logo@permails.com>
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8\n"
-
-msgid "Outlierox"
-msgstr ""
-
-msgid "Outlierox Control Center"
-msgstr ""
-
-msgid "Establish a secure, encrypted zero-config Mesh virtual network on your router."
-msgstr ""
-
-msgid "Connecting to Tailscale..."
-msgstr ""
-
-msgid "Requesting authorization link from Tailscale/Headscale..."
-msgstr ""
-
-msgid "Authorization login page opened in a new tab."
-msgstr ""
-
-msgid "Successfully logged in."
-msgstr ""
-
-msgid "Login error: "
-msgstr ""
-
-msgid "Authorize Login"
-msgstr ""
-
-msgid "Are you sure you want to clean runtime cache and restart service?"
-msgstr ""
-
-msgid "Resetting..."
-msgstr ""
-
-msgid "Please wait..."
-msgstr ""
-
-msgid "Service cache cleared and restarted successfully."
-msgstr ""
-
-msgid "Cleanup & Reset"
-msgstr ""
-
-msgid "Save & Apply"
-msgstr ""
-
-msgid "Reset"
-msgstr ""
+msgstr "Content-Type: text/plain; charset=UTF-8
+"
 
 msgid "Running"
 msgstr ""
@@ -61,16 +14,73 @@ msgstr ""
 msgid "Stopped"
 msgstr ""
 
+msgid "No IP assigned"
+msgstr ""
+
+msgid "Joining Network..."
+msgstr ""
+
+msgid "Connecting to network with pre-auth key..."
+msgstr ""
+
+msgid "Failed to Join Network"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Error"
+msgstr ""
+
+msgid "Obtaining Auth URL..."
+msgstr ""
+
+msgid "Contacting coordination server to generate web login URL..."
+msgstr ""
+
+msgid "Complete Web Authentication"
+msgstr ""
+
+msgid "Auth URL generated. Please open in browser to complete login:"
+msgstr ""
+
+msgid "Copied"
+msgstr ""
+
+msgid "Copy URL"
+msgstr ""
+
+msgid "Open Auth URL ↗"
+msgstr ""
+
+msgid "I have completed authorization (Refresh)"
+msgstr ""
+
+msgid "Mesh Network"
+msgstr ""
+
+msgid "Zero-config Mesh virtual private network based on Tailscale / Headscale engine."
+msgstr ""
+
 msgid "Current Device"
 msgstr ""
 
-msgid "Network: "
+msgid "Network:"
+msgstr ""
+
+msgid "Tailnet Mesh"
+msgstr ""
+
+msgid "Tailscale IP"
 msgstr ""
 
 msgid "Copy"
 msgstr ""
 
-msgid "Copied IP: "
+msgid "IPv6:"
+msgstr ""
+
+msgid "None"
 msgstr ""
 
 msgid "Firewall Mode"
@@ -85,10 +95,10 @@ msgstr ""
 msgid "Online Nodes"
 msgstr ""
 
-msgid "Direct: "
+msgid "Direct"
 msgstr ""
 
-msgid "Relay: "
+msgid "Relay"
 msgstr ""
 
 msgid "Mesh Nodes"
@@ -109,16 +119,13 @@ msgstr ""
 msgid "Logs"
 msgstr ""
 
-msgid "Tailnet Mesh Peers"
+msgid "Mesh Peers"
 msgstr ""
 
 msgid "Real-time status, IP, and relay link topology for all connected mesh nodes."
 msgstr ""
 
-msgid "Refresh"
-msgstr ""
-
-msgid "Logout & Unbind"
+msgid "Refresh Nodes"
 msgstr ""
 
 msgid "Are you sure you want to logout and unbind this node?"
@@ -127,10 +134,16 @@ msgstr ""
 msgid "Logging out..."
 msgstr ""
 
-msgid "Status / Device"
+msgid "Please wait..."
 msgstr ""
 
-msgid "Tailscale IP"
+msgid "Logout & Unbind"
+msgstr ""
+
+msgid "Authorize Login"
+msgstr ""
+
+msgid "Status / Device"
 msgstr ""
 
 msgid "OS"
@@ -152,12 +165,6 @@ msgid "Local Interface (tailscale0)"
 msgstr ""
 
 msgid "Exit Node"
-msgstr ""
-
-msgid "Direct"
-msgstr ""
-
-msgid "Relay"
 msgstr ""
 
 msgid "Core Service Management"
@@ -185,12 +192,6 @@ msgid "Directory for persistent node state and keys"
 msgstr ""
 
 msgid "Firewall Backend Mode"
-msgstr ""
-
-msgid "nftables (OpenWrt recommended)"
-msgstr ""
-
-msgid "iptables (Legacy)"
 msgstr ""
 
 msgid "Standard Output Log"
@@ -229,13 +230,16 @@ msgstr ""
 msgid "Friendly name in the Tailnet mesh"
 msgstr ""
 
-msgid "One-click Interface & Firewall Fix"
+msgid "Quick Tool: Fix Virtual Interface & Firewall Rules"
 msgstr ""
 
-msgid "Interface and firewall rules synchronized."
+msgid "Fixing firewall..."
 msgstr ""
 
-msgid "Fix & Sync"
+msgid "Configuring interface and firewall rules..."
+msgstr ""
+
+msgid "Fix Firewall"
 msgstr ""
 
 msgid "Advertise LAN Subnets"
@@ -247,10 +251,13 @@ msgstr ""
 msgid "Auto-detected Subnets (Click to toggle)"
 msgstr ""
 
+msgid "No valid local LAN subnets detected"
+msgstr ""
+
 msgid "Advertised Subnets"
 msgstr ""
 
-msgid "Comma-separated subnet list, e.g. 192.168.1.0/24,10.0.0.0/24"
+msgid "Comma-separated subnets, arbitrary custom CIDRs supported, e.g. 192.168.1.0/24,10.0.0.0/24"
 msgstr ""
 
 msgid "Advertise as Exit Node"
@@ -293,9 +300,6 @@ msgid "Firewall4 Zone Policies"
 msgstr ""
 
 msgid "Manage OpenWrt Firewall4 zone rules safely and non-destructively"
-msgstr ""
-
-msgid "Firewall rules verified and active."
 msgstr ""
 
 msgid "Repair Rules"
@@ -343,12 +347,6 @@ msgstr ""
 msgid "Secure Tailscale-authenticated SSH access"
 msgstr ""
 
-msgid "Enable Built-in Web Client"
-msgstr ""
-
-msgid "Start local Web client for web-based node control"
-msgstr ""
-
 msgid "Advanced Flags & Parameters"
 msgstr ""
 
@@ -376,16 +374,31 @@ msgstr ""
 msgid "Enabled (Reduced GC Frequency)"
 msgstr ""
 
+msgid "Service Reset & Cache Cleanup"
+msgstr ""
+
+msgid "Clear Tailscale runtime node state, auth cache, and restart daemon"
+msgstr ""
+
+msgid "Are you sure you want to clean runtime cache and restart service?"
+msgstr ""
+
+msgid "Resetting..."
+msgstr ""
+
+msgid "Clean & Restart"
+msgstr ""
+
 msgid "Real-time Logs"
 msgstr ""
 
 msgid "Live syslog events captured from logread"
 msgstr ""
 
-msgid "Logs copied to clipboard."
+msgid "No logs recorded."
 msgstr ""
 
-msgid "No logs recorded."
+msgid "Refresh"
 msgstr ""
 
 msgid "Applying Outlierox Configuration..."
@@ -394,14 +407,3 @@ msgstr ""
 msgid "Saving and syncing configuration to tailscaled daemon..."
 msgstr ""
 
-msgid "Outlierox configuration saved and applied successfully!"
-msgstr ""
-
-msgid "Error: "
-msgstr ""
-
-msgid "Failed to save"
-msgstr ""
-
-msgid "Save error: "
-msgstr ""

@@ -331,36 +331,36 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 		const host = settings.hostname || '';
 
 		if (key) {
-			ui.showModal(_('正在接入网络...'), [
-				E('p', { 'class': 'spinning' }, _('正在使用当前配置的预授权密钥连接网络...'))
+			ui.showModal(_('Joining Network...'), [
+				E('p', { 'class': 'spinning' }, _('Connecting to network with pre-auth key...'))
 			]);
 			callDoLogin({ login_server: srv, auth_key: key, hostname: host, loginserver: srv, loginserver_authkey: key, authKey: key }).then(function(res) {
 				if (res && res.error) {
-					ui.showModal(_('加入网络失败'), [
+					ui.showModal(_('Failed to Join Network'), [
 						E('p', {}, res.error),
 						E('div', { 'style': 'display:flex; justify-content:flex-end; margin-top:1rem;' }, [
-							E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('关闭'))
+							E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('Close'))
 						])
 					]);
 				} else {
 					window.location.reload();
 				}
 			}).catch(function(err) {
-				ui.showModal(_('错误'), [
+				ui.showModal(_('Error'), [
 					E('p', {}, err.message || err),
 					E('div', { 'style': 'display:flex; justify-content:flex-end; margin-top:1rem;' }, [
-						E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('关闭'))
+						E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('Close'))
 					])
 				]);
 			});
 		} else {
-			ui.showModal(_('正在获取授权链接...'), [
-				E('p', { 'class': 'spinning' }, _('正在联系协调服务器生成网页登录链接...'))
+			ui.showModal(_('Obtaining Auth URL...'), [
+				E('p', { 'class': 'spinning' }, _('Contacting coordination server to generate web login URL...'))
 			]);
 			callDoLogin({ login_server: srv, auth_key: '', hostname: host, loginserver: srv, loginserver_authkey: '' }).then(function(res) {
 				if (res && res.url) {
-					ui.showModal(_('完成网页授权登录'), [
-						E('p', { 'style': 'margin-bottom:0.5rem;' }, _('已生成授权链接，请在浏览器中打开完成登录：')),
+					ui.showModal(_('Complete Web Authentication'), [
+						E('p', { 'style': 'margin-bottom:0.5rem;' }, _('Auth URL generated. Please open in browser to complete login:')),
 						E('div', { 'style': 'margin:0.75rem 0; word-break:break-all; background:var(--background-color-medium,#f1f5f9); padding:0.75rem; border-radius:4px; font-family:monospace; font-size:0.85rem; border:1px solid var(--border-color-medium,#cbd5e1);' }, [
 							E('a', { 'href': res.url, 'target': '_blank', 'style': 'color:#0284c7; text-decoration:underline; font-weight:bold;' }, res.url)
 						]),
@@ -368,22 +368,22 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 							E('button', { 'class': 'btn cbi-button', 'click': function() {
 								navigator.clipboard.writeText(res.url);
 								const orig = this.textContent;
-								this.textContent = _('已复制');
+								this.textContent = _('Copied');
 								const self = this;
 								setTimeout(function() { self.textContent = orig; }, 1500);
-							} }, _('复制链接')),
-							E('a', { 'class': 'btn cbi-button cbi-button-apply important', 'href': res.url, 'target': '_blank' }, _('打开授权页面 ↗')),
-							E('button', { 'class': 'btn cbi-button cbi-button-positive', 'click': function() { ui.hideModal(); window.location.reload(); } }, _('我已完成授权 (刷新)'))
+							} }, _('Copy URL')),
+							E('a', { 'class': 'btn cbi-button cbi-button-apply important', 'href': res.url, 'target': '_blank' }, _('Open Auth URL ↗')),
+							E('button', { 'class': 'btn cbi-button cbi-button-positive', 'click': function() { ui.hideModal(); window.location.reload(); } }, _('I have completed authorization (Refresh)'))
 						])
 					]);
 				} else {
 					window.location.reload();
 				}
 			}).catch(function(err) {
-				ui.showModal(_('错误'), [
+				ui.showModal(_('Error'), [
 					E('p', {}, err.message || err),
 					E('div', { 'style': 'display:flex; justify-content:flex-end; margin-top:1rem;' }, [
-						E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('关闭'))
+						E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('Close'))
 					])
 				]);
 			});
@@ -420,7 +420,7 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 						ev.preventDefault();
 						navigator.clipboard.writeText(status.ipv4 || '');
 						const orig = this.textContent;
-						this.textContent = _('已复制');
+						this.textContent = _('Copied');
 						const self = this;
 						setTimeout(function() { self.textContent = orig; }, 1500);
 					} }, _('Copy'))
@@ -458,7 +458,7 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 						E('div', { 'class': 'ts-ow-card-desc' }, _('Real-time status, IP, and relay link topology for all connected mesh nodes.'))
 					]),
 					E('div', { 'style': 'display:flex; gap:0.4rem;' }, [
-						E('button', { 'class': 'btn cbi-button cbi-button-action', 'click': function(ev) { ev.preventDefault(); window.location.reload(); } }, '刷新节点'),
+						E('button', { 'class': 'btn cbi-button cbi-button-action', 'click': function(ev) { ev.preventDefault(); window.location.reload(); } }, _('Refresh Nodes')),
 						isRunning ? E('button', { 'class': 'btn cbi-button cbi-button-remove', 'click': function(ev) { ev.preventDefault(); if (confirm(_('Are you sure you want to logout and unbind this node?'))) { ui.showModal(_('Logging out...'), E('em', {}, _('Please wait...'))); callDoLogout().then(function() { ui.hideModal(); window.location.reload(); }); } } }, _('Logout & Unbind')) : E('button', { 'class': 'btn cbi-button cbi-button-apply', 'click': function(ev) { ev.preventDefault(); handleDirectJoin(); } }, _('Authorize Login'))
 					])
 				]),
@@ -494,7 +494,7 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 										ev.preventDefault();
 										navigator.clipboard.writeText(status.ipv4 || '');
 										const orig = this.textContent;
-										this.textContent = _('已复制');
+										this.textContent = _('Copied');
 										const self = this;
 										setTimeout(function() { self.textContent = orig; }, 1500);
 									} }, _('Copy'))
@@ -521,7 +521,7 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 											ev.preventDefault();
 											navigator.clipboard.writeText(ipStr);
 											const orig = this.textContent;
-											this.textContent = _('已复制');
+											this.textContent = _('Copied');
 											const self = this;
 											setTimeout(function() { self.textContent = orig; }, 1500);
 										} }, _('Copy'))
@@ -601,23 +601,23 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 						E('span', { 'class': 'ts-ow-hint' }, _('Friendly name in the Tailnet mesh'))
 					]),
 					E('div', { 'style': 'background-color:var(--background-color-medium); border:1px solid var(--border-color-low); border-radius:4px; padding:0.75rem; display:flex; justify-content:space-between; align-items:center; margin-top:0.5rem;' }, [
-						E('div', { 'style': 'font-size:0.75rem; color:var(--text-color-medium);' }, _('快捷工具：修复虚拟接口与防火墙规则')),
+						E('div', { 'style': 'font-size:0.75rem; color:var(--text-color-medium);' }, _('Quick Tool: Fix Virtual Interface & Firewall Rules')),
 						E('button', { 'class': 'btn cbi-button cbi-button-action', 'click': function(ev) {
 							ev.preventDefault();
-							ui.showModal(_('正在修复防火墙...'), [
-								E('p', { 'class': 'spinning' }, _('正在配置接口与防火墙规则...'))
+							ui.showModal(_('Fixing firewall...'), [
+								E('p', { 'class': 'spinning' }, _('Configuring interface and firewall rules...'))
 							]);
 							callSetupFirewall().then(function() {
 								setTimeout(function() { window.location.reload(); }, 600);
 							}).catch(function(err) {
-								ui.showModal(_('错误'), [
+								ui.showModal(_('Error'), [
 									E('p', {}, err.message || err),
 									E('div', { 'style': 'display:flex; justify-content:flex-end; margin-top:1rem;' }, [
-										E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('关闭'))
+										E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('Close'))
 									])
 								]);
 							});
-						} }, _('修复防火墙'))
+						} }, _('Fix Firewall'))
 					])
 				])
 			])
@@ -648,12 +648,12 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 								}
 								input.value = cur.join(',');
 							} }, sub);
-						})) : E('div', { 'class': 'ts-ow-hint', 'style': 'color:var(--text-color-medium);' }, _('未检测到有效的本机局域网子网'))
+						})) : E('div', { 'class': 'ts-ow-hint', 'style': 'color:var(--text-color-medium);' }, _('No valid local LAN subnets detected'))
 					]),
 					E('div', { 'class': 'ts-ow-form-group' }, [
 						E('label', { 'class': 'ts-ow-label' }, _('Advertised Subnets')),
 						E('input', { 'type': 'text', 'class': 'cbi-input-text', 'id': 'ts_advertise_routes', 'value': getAdvRoutesStr(settings.advertise_routes), 'placeholder': '192.168.1.0/24' }),
-						E('span', { 'class': 'ts-ow-hint' }, _('多个子网用逗号隔开，支持任意自定义网段，例如：192.168.1.0/24,10.0.0.0/24'))
+						E('span', { 'class': 'ts-ow-hint' }, _('Comma-separated subnets, arbitrary custom CIDRs supported, e.g. 192.168.1.0/24,10.0.0.0/24'))
 					]),
 					E('div', { 'class': 'ts-ow-form-row' }, [
 						E('div', {}, [
@@ -715,16 +715,16 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 						]),
 						E('button', { 'class': 'btn cbi-button cbi-button-action', 'click': function(ev) {
 							ev.preventDefault();
-							ui.showModal(_('正在修复防火墙...'), [
-								E('p', { 'class': 'spinning' }, _('正在配置接口与防火墙规则...'))
+							ui.showModal(_('Fixing firewall...'), [
+								E('p', { 'class': 'spinning' }, _('Configuring interface and firewall rules...'))
 							]);
 							callSetupFirewall().then(function() {
 								setTimeout(function() { window.location.reload(); }, 600);
 							}).catch(function(err) {
-								ui.showModal(_('错误'), [
+								ui.showModal(_('Error'), [
 									E('p', {}, err.message || err),
 									E('div', { 'style': 'display:flex; justify-content:flex-end; margin-top:1rem;' }, [
-										E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('关闭'))
+										E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('Close'))
 									])
 								]);
 							});
@@ -814,8 +814,8 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 			E('div', { 'class': 'ts-ow-card', 'style': 'margin-top:1rem; border-color:#fca5a5;' }, [
 				E('div', { 'class': 'ts-ow-card-header' }, [
 					E('div', {}, [
-						E('div', { 'class': 'ts-ow-card-title', 'style': 'color:#dc2626;' }, [getSvg('shield'), '服务重置与缓存清理']),
-						E('div', { 'class': 'ts-ow-card-desc' }, '清空 Tailscale 运行时节点状态与认证缓存并重启后台服务')
+						E('div', { 'class': 'ts-ow-card-title', 'style': 'color:#dc2626;' }, [getSvg('shield'), _('Service Reset & Cache Cleanup')]),
+						E('div', { 'class': 'ts-ow-card-desc' }, _('Clear Tailscale runtime node state, auth cache, and restart daemon'))
 					]),
 					E('button', { 'class': 'btn cbi-button cbi-button-remove', 'click': function(ev) {
 						ev.preventDefault();
@@ -827,7 +827,7 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 								setTimeout(function() { window.location.reload(); }, 1200);
 							});
 						}
-					} }, '清理并重启服务')
+					} }, _('Clean & Restart'))
 				])
 			])
 		]),
@@ -855,7 +855,7 @@ return view.extend({load:function(){return Promise.all([callGetStatus(),callGetS
 							if (body) {
 								navigator.clipboard.writeText(body.value);
 								const orig = this.textContent;
-								this.textContent = _('已复制');
+								this.textContent = _('Copied');
 								const self = this;
 								setTimeout(function() { self.textContent = orig; }, 1500);
 							}
@@ -926,10 +926,10 @@ handleSaveApply: function(ev, mode) {
 				window.location.reload();
 			}, 1200);
 		}).catch(function(err) {
-			ui.showModal(_('错误'), [
+			ui.showModal(_('Error'), [
 				E('p', {}, err.message || err),
 				E('div', { 'style': 'display:flex; justify-content:flex-end; margin-top:1rem;' }, [
-					E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('关闭'))
+					E('button', { 'class': 'btn cbi-button', 'click': ui.hideModal }, _('Close'))
 				])
 			]);
 		});

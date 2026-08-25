@@ -414,3 +414,76 @@ msgstr "儲存失敗"
 
 msgid "Save error: "
 msgstr "儲存出錯: "
+
+msgid "Joining Network..."
+msgstr "正在接入網路..."
+
+msgid "Connecting to network with pre-auth key..."
+msgstr "正在使用目前配置的預授權金鑰連線網路..."
+
+msgid "Failed to Join Network"
+msgstr "加入網路失敗"
+
+msgid "Close"
+msgstr "關閉"
+
+msgid "Error"
+msgstr "錯誤"
+
+msgid "Obtaining Auth URL..."
+msgstr "正在獲取授權連結..."
+
+msgid "Contacting coordination server to generate web login URL..."
+msgstr "正在聯絡協調伺服器產生網頁登入連結..."
+
+msgid "Complete Web Authentication"
+msgstr "完成網頁授權登入"
+
+msgid "Auth URL generated. Please open in browser to complete login:"
+msgstr "已產生授權連結，請在瀏覽器中開啟完成登入："
+
+msgid "Copied"
+msgstr "已複製"
+
+msgid "Copy URL"
+msgstr "複製連結"
+
+msgid "Open Auth URL ↗"
+msgstr "開啟授權頁面 ↗"
+
+msgid "I have completed authorization (Refresh)"
+msgstr "我已完成授權 (重新整理)"
+
+msgid "Refresh Nodes"
+msgstr "重新整理節點"
+
+msgid "Quick Tool: Fix Virtual Interface & Firewall Rules"
+msgstr "快捷工具：修復虛擬介面與防火牆規則"
+
+msgid "Fixing firewall..."
+msgstr "正在修復防火牆..."
+
+msgid "Configuring interface and firewall rules..."
+msgstr "正在設定介面與防火牆規則..."
+
+msgid "Fix Firewall"
+msgstr "修復防火牆"
+
+msgid "Repair Rules"
+msgstr "修復規則"
+
+msgid "No valid local LAN subnets detected"
+msgstr "未偵測到有效的手機/區域網路子網路"
+
+msgid "Comma-separated subnets, arbitrary custom CIDRs supported, e.g. 192.168.1.0/24,10.0.0.0/24"
+msgstr "多個子網路用逗號隔開，支援任意自訂網段，例如：192.168.1.0/24,10.0.0.0/24"
+
+msgid "Service Reset & Cache Cleanup"
+msgstr "服務重設與快取清理"
+
+msgid "Clear Tailscale runtime node state, auth cache, and restart daemon"
+msgstr "清空 Tailscale 執行時節點狀態與認證快取並重啟後台服務"
+
+msgid "Clean & Restart"
+msgstr "清理並重啟服務"
+
