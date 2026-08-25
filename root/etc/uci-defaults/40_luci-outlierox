@@ -1,9 +1,21 @@
 #!/bin/sh
 
-uci -q batch <<-EOF >/dev/null
-	delete ucitrack.@tailscale[-1]
-	commit ucitrack
-EOF
+if [ ! -f /etc/config/tailscale ]; then
+	touch /etc/config/tailscale
+fi
+
+if ! uci -q get tailscale.settings >/dev/null; then
+	uci -q batch <<-EOF >/dev/null
+		set tailscale.settings=settings
+		set tailscale.settings.enabled='1'
+		set tailscale.settings.port='41641'
+		set tailscale.settings.log_stderr='1'
+		set tailscale.settings.log_stdout='1'
+		set tailscale.settings.state_file='/etc/tailscale/tailscaled.state'
+		commit tailscale
+	EOF
+fi
 
 rm -f /tmp/luci-indexcache
 exit 0
+

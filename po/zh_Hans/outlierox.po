@@ -239,13 +239,13 @@ msgid "Friendly name in the Tailnet mesh"
 msgstr "在 Tailnet 中显示的友好名称"
 
 msgid "One-click Interface & Firewall Fix"
-msgstr "快捷工具：一键修复虚拟接口与规则"
+msgstr "快捷工具：修复虚拟接口与防火墙规则"
 
 msgid "Interface and firewall rules synchronized."
 msgstr "接口与防火墙已自动同步。"
 
 msgid "Fix & Sync"
-msgstr "一键修复"
+msgstr "修复防火墙"
 
 msgid "Advertise LAN Subnets"
 msgstr "局域网子网发布"
