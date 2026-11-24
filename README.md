@@ -4,7 +4,7 @@ Next-Generation Zero-Configuration Mesh Virtual Private Network Management Conso
 
 ---
 
-## ✨ Features
+## Features
 
 * **Real-Time Mesh Topology Dashboard**: Live monitoring of self-node status, virtual IP assignments, P2P direct links, and DERP relay paths for all connected nodes across your Tailnet mesh.
 * **Subnet Routing & Egress Exit Nodes**: Effortlessly publish local router subnets, discover connected subnets automatically, accept remote routes, and configure egress exit nodes with transparent Site-to-Site SNAT control.
@@ -16,7 +16,7 @@ Next-Generation Zero-Configuration Mesh Virtual Private Network Management Conso
 
 ---
 
-## 🛠️ How to Build
+## How to Build
 
 ### 1. Place into Source Tree
 Clone this repository into your OpenWrt buildroot source directory under `package/` or custom feeds:
@@ -55,7 +55,7 @@ make package/luci-app-outlierox/compile V=s
 
 ---
 
-## 📂 File Structure
+## File Structure
 
 ```text
 luci-app-outlierox/
@@ -94,6 +94,6 @@ luci-app-outlierox/
 
 ---
 
-## 📜 License
+## License
 
 GPL-2.0 © 2026 [permails](mailto:logo@permails.com)

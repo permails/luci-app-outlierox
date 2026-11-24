@@ -6,6 +6,9 @@
 
 include $(TOPDIR)/rules.mk
 
+PKG_VERSION:=0.26.11
+PKG_RELEASE:=1
+
 LUCI_TITLE:=LuCI support for Outlierox (Zero-Config Mesh Network)
 LUCI_DEPENDS:=+luci-base +tailscale
 LUCI_PKGARCH:=all

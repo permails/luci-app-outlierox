@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2026 permails <logo@permails.com>
+ * Outlierox - Zero-Config Tailnet Mesh for OpenWrt
+ */
 'use strict';
 'require dom';
 'require poll';

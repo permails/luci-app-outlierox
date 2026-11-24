@@ -1,3 +1,6 @@
+#
+# Copyright (C) 2026 permails <logo@permails.com>
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8
 "
