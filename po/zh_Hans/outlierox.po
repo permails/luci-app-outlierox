@@ -487,3 +487,222 @@ msgstr "清空 Tailscale 运行时节点状态与认证缓存并重启后台服�
 msgid "Clean & Restart"
 msgstr "清理并重启服务"
 
+
+msgid "All Levels"
+msgstr "全部级别"
+
+msgid "Applying..."
+msgstr "应用中..."
+
+msgid "Auth URL generated. Open the link in your browser to authorize this router:"
+msgstr "授权链接已生成，请在浏览器中打开以完成路由器授权："
+
+msgid "Auto Fix"
+msgstr "自动修复"
+
+msgid "Auto-detected Subnets"
+msgstr "自动探测子网"
+
+msgid "Bottom"
+msgstr "置底"
+
+msgid "Click subnet pills to toggle advertisement"
+msgstr "点击子网标签即可切换广播"
+
+msgid "Comma-separated CIDRs, e.g. 192.168.1.0/24,10.0.0.0/24"
+msgstr "逗号分隔的 CIDR 网段，例如 192.168.1.0/24,10.0.0.0/24"
+
+msgid "Configuration saved and applied."
+msgstr "配置已保存并应用。"
+
+msgid "Connected to Tailnet."
+msgstr "已接入 Tailnet 网络。"
+
+msgid "Connected: "
+msgstr "已连接: "
+
+msgid "Contains "KEY=" assignment prefix."
+msgstr "包含多余的 "KEY=" 赋值前缀。"
+
+msgid "Contains shell "export" prefix."
+msgstr "包含多余的 "export" 命令前缀。"
+
+msgid "Contains surrounding quotes."
+msgstr "包含多余的首尾引号。"
+
+msgid "Copied Tailscale IP: "
+msgstr "已复制 Tailscale IP: "
+
+msgid "Copied peer IP: "
+msgstr "已复制节点 IP: "
+
+msgid "Create tailscale0 interface and firewall zone rules automatically"
+msgstr "自动创建 tailscale0 接口与防火墙区域规则"
+
+msgid "Direct: %d · Relay: %d"
+msgstr "直连: %d · 中继: %d"
+
+msgid "Disabled"
+msgstr "已禁用"
+
+msgid "Done (Refresh)"
+msgstr "已完成（刷新）"
+
+msgid "Enable Service"
+msgstr "启用服务"
+
+msgid "Errors Only"
+msgstr "仅错误"
+
+msgid "Failed to copy to clipboard."
+msgstr "复制到剪贴板失败。"
+
+msgid "Filter keyword..."
+msgstr "过滤关键词..."
+
+msgid "Hide"
+msgstr "隐藏"
+
+msgid "IPv6: "
+msgstr "IPv6: "
+
+msgid "Interface & Firewall Sync"
+msgstr "接口与防火墙同步"
+
+msgid "Interface: tailscale0 (MTU %s)"
+msgstr "接口: tailscale0 (MTU %s)"
+
+msgid "Joining..."
+msgstr "加入中..."
+
+msgid "Loading..."
+msgstr "加载中..."
+
+msgid "Local Node"
+msgstr "本机节点"
+
+msgid "Mesh Topology"
+msgstr "Mesh 拓扑"
+
+msgid "No matching logs recorded."
+msgstr "暂无匹配的日志记录。"
+
+msgid "No remote mesh peers found yet. Authorize this node to sync peer devices."
+msgstr "暂未发现远程互联节点，请先授权登录以同步设备列表。"
+
+msgid "Node is waiting for authorization. Click "Authorize Login" above or configure a Pre-Auth Key in General Settings."
+msgstr "节点等待授权中，请点击上方「授权登录」或在常规设置中填写预授权密钥。"
+
+msgid "Node logged out and unbound."
+msgstr "节点已登出并解绑。"
+
+msgid "Not assigned"
+msgstr "未分配"
+
+msgid "Offline"
+msgstr "离线"
+
+msgid "Online"
+msgstr "在线"
+
+msgid "Open Auth URL"
+msgstr "打开授权链接"
+
+msgid "Operation failed"
+msgstr "操作失败"
+
+msgid "Overview"
+msgstr "概览"
+
+msgid "Peer Nodes"
+msgstr "互联节点"
+
+msgid "Refresh failed: "
+msgstr "刷新失败: "
+
+msgid "Refreshing..."
+msgstr "刷新中..."
+
+msgid "Requesting URL..."
+msgstr "获取链接中..."
+
+msgid "Running Status"
+msgstr "运行状态"
+
+msgid "Service enabled."
+msgstr "服务已启用。"
+
+msgid "Service is disabled. Click "Enable Service" above or enable it in General Settings to start Tailscale."
+msgstr "服务已禁用。点击上方「启用服务」或在常规设置中开启以启动 Tailscale。"
+
+msgid "Service stopped."
+msgstr "服务已停止。"
+
+msgid "Show"
+msgstr "显示"
+
+msgid "Standard Node"
+msgstr "普通节点"
+
+msgid "Starting..."
+msgstr "启动中..."
+
+msgid "Status refreshed."
+msgstr "状态已刷新。"
+
+msgid "Stop Service"
+msgstr "停止服务"
+
+msgid "Stopping..."
+msgstr "停止中..."
+
+msgid "Successfully joined Tailnet."
+msgstr "已成功加入 Tailnet 网络。"
+
+msgid "Tailnet mesh is active and healthy. Status refreshes automatically every 5 seconds."
+msgstr "Tailnet 虚拟网运行正常，状态每 5 秒自动静默刷新。"
+
+msgid "Tailscale daemon is currently stopped. Click "Enable Service" to start."
+msgstr "Tailscale 守护进程当前已停止，点击「启用服务」即可启动。"
+
+msgid "Top"
+msgstr "置顶"
+
+msgid "Unassigned"
+msgstr "未分配"
+
+msgid "Unknown"
+msgstr "未知"
+
+msgid "Unknown error"
+msgstr "未知错误"
+
+msgid "Warnings & Errors"
+msgstr "警告与错误"
+
+msgid "Allow WAN Direct Punching (UDP)"
+msgstr "允许 WAN 入站直连打洞 (UDP)"
+
+msgid "Open Tailscale UDP listen port on WAN zone to enable direct P2P connections instead of DERP relay"
+msgstr "在 WAN 区域放行 Tailscale UDP 监听端口，优先建立 P2P 直连而非走 DERP 中继"
+
+msgid "Warning: Enabling MagicDNS overwrites the router /etc/resolv.conf with 100.100.100.100. If your Headscale/Tailscale lacks global upstream DNS or conflicts with dnsmasq/proxy plugins, router DNS resolution may time out or fail. Keep disabled unless required."
+msgstr "警告：开启 MagicDNS 会直接用 100.100.100.100 覆盖路由器 /etc/resolv.conf。若 Headscale/Tailscale 未配置全局上游 DNS，或与 dnsmasq/代理分流插件冲突，将导致路由器本机域名解析超时或断网。非必要请保持关闭。"
+
+msgid "Forward Tailnet domain queries (e.g. *.ts.net) to 100.100.100.100 via dnsmasq"
+msgstr "通过 dnsmasq 仅将 Tailnet 域名（如 *.ts.net）定向转发至 100.100.100.100"
+
+msgid "Safe Mode: Only Tailnet domains are forwarded to 100.100.100.100 through dnsmasq. Your router /etc/resolv.conf, default ISP DNS, and proxy rules remain untouched."
+msgstr "安全模式：仅通过 dnsmasq 定向转发 Tailnet 内部域名，完全不修改路由器 /etc/resolv.conf、主网宽带 DNS 及代理分流规则，停用即自动清理。"
+
+msgid "Maintenance operations for runtime recovery and troubleshooting"
+msgstr "用于服务异常恢复与运行缓存排障的维护操作"
+
+msgid "Danger Zone"
+msgstr "高危操作"
+
+msgid "Clean Runtime Cache & Restart Daemon"
+msgstr "清理运行缓存并重启服务"
+
+msgid "Runs tailscaled --cleanup and restarts the service. Your UCI configuration in /etc/config/tailscale will be preserved."
+msgstr "执行 tailscaled --cleanup 并重启后台守护进程；/etc/config/tailscale 中的 UCI 配置将被保留。"
